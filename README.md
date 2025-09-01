@@ -1,75 +1,38 @@
-SkillUp Insights
+# SkillUp Insights
 
-🚀 SkillUp Insights is a personalized learning tracker and career recommender.
-It helps users log their skills, track progress, and get tailored career suggestions using machine learning.
+## Overview
+SkillUp Insights is a personalized learning tracker and career recommender built with FastAPI and React. Users log their skills, monitor progress, and receive tailored career suggestions powered by a lightweight ML model.
 
-✨ Features
+---
 
-📊 Skill progress tracking
+## Table of Contents
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Project Structure](#project-structure)  
+- [Features](#features)  
+- [Future Enhancements](#future-enhancements)  
+- [Contributing](#contributing)  
+- [Contact](#contact)  
+- [License](#license)  
 
-🎯 Personalized career recommendations
+---
 
-🤝 Frontend: React (Vite, TailwindCSS)
+## Installation
 
-⚡ Backend: FastAPI (Python) with ML model
-
-💾 Database: PostgreSQL / SQLite (dev)
-
-🔒 Authentication & user management
-
-🛠️ Tech Stack
-
-Frontend: React + Vite + TailwindCSS
-
-Backend: FastAPI (Python)
-
-ML Model: Scikit-learn / Pandas
-
-Database: PostgreSQL / SQLite
-
-Version Control: Git & GitHub
-
-📂 Folder Structure
-SkillUp_Insights/
-│── backend/         # FastAPI backend & ML model  
-│── frontend/        # React frontend (Vite)  
-│── requirements.txt # Python dependencies  
-│── package.json     # Frontend dependencies  
-│── README.md        # Project documentation  
-
-⚡ Getting Started
-🔹 Clone the Repository
+```bash
 git clone https://github.com/Srinithimahalakshmi/Skillup_insights.git
 cd Skillup_insights
 
-🔹 Backend Setup (FastAPI)
+# Backend
 cd backend
+python -m venv venv
+source venv/bin/activate     # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload
+python setup_db.py           # Initializes SQLite database
+python train_model.py        # Trains and saves model.pkl
+python app.py                # Start FastAPI backend (default port: 8000)
 
-
-Runs at 👉 http://127.0.0.1:8000
-
-🔹 Frontend Setup (React + Vite)
-cd frontend
+# Frontend
+cd ../frontend
 npm install
-npm run dev
-
-
-Runs at 👉 http://127.0.0.1:5173
-
-📸 Screenshots
-
-(Add screenshots/gifs of your app here once UI is ready)
-
-📌 Future Enhancements
-
-📈 Advanced analytics dashboard
-
-🔗 LinkedIn/GitHub API integration for skills import
-
-📱 Mobile app version
-
-🤝 Contributing
-
-Contributions are welcome! Feel free to fork, raise issues, or submit PRs.
+npm run dev                  # Starts React app (default port: 5173)
