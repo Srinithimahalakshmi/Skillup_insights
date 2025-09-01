@@ -1,8 +1,4 @@
-Here’s a **professional README.md** for your **SkillUp Insights** project, styled similarly to your **Netflix Predictor** example—clean, detailed, and easy to follow:
 
----
-
-````markdown
 # SkillUp Insights
 
 ## Overview
@@ -127,14 +123,3 @@ To contribute:
 
 ---
 
-## License
-
-This project is licensed under the **MIT License**.
-
-```
-
----
-
-Let me know if you’d like to add **screenshots**, **technology badges**, or visual enhancements to make it stand out even more!
-::contentReference[oaicite:0]{index=0}
-```
